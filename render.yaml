@@ -1,0 +1,7 @@
+# Render Blueprint
+# This repo's Vite app lives in the IncomeShield/ subfolder.
+staticSites:
+  - name: incomeshield
+    rootDir: IncomeShield
+    buildCommand: npm ci && npm run build
+    publishDir: dist

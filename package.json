@@ -1,0 +1,11 @@
+{
+  "name": "incomeshield-repo",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix IncomeShield run dev",
+    "build": "npm --prefix IncomeShield run build",
+    "preview": "npm --prefix IncomeShield run preview",
+    "lint": "npm --prefix IncomeShield run lint",
+    "postinstall": "npm --prefix IncomeShield install"
+  }
+}
