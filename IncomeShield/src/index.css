@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-gray-900 overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .page-enter {
+    animation: pageEnter 300ms ease-out forwards;
+  }
+
+  .hide-scrollbars::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbars {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
